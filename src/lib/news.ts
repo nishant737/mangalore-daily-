@@ -80,112 +80,170 @@ The foundation also runs Alva's College of Nursing, Alva's College of Pharmacy, 
 Admission to undergraduate Ayurveda and Homoeopathy courses in India is through the NEET exam. Seats, fees and eligibility change each year, so check with the college before applying: info@alvas.org, 08258-238104, or alvas.org.`,
   },
   {
-    slug: "sample-monsoon-update",
-    title: "Sample story: Monsoon update for Dakshina Kannada",
+    slug: "monsoon-dakshina-kannada-what-to-expect",
+    title: "Monsoon in Dakshina Kannada: what to expect and how to stay safe",
     summary:
-      "This is a placeholder story. Replace it with real news about the weather in Mangalore.",
+      "The southwest monsoon brings some of Karnataka's heaviest rain to the coast. Here is what changes in Mangaluru from June to September.",
     category: "Weather",
-    date: "2026-10-06",
+    date: "2026-10-18",
     author: "Mangalore Daily Desk",
-    body: `This is sample text so you can see how a full story looks on the page. Replace it with your own reporting.
+    body: `The southwest monsoon usually reaches the Karnataka coast in early June and stays until about September. Dakshina Kannada is one of the wettest districts in the state, and July is normally the heaviest month.
 
-Each blank line starts a new paragraph. You can write as many paragraphs as you need.
+The India Meteorological Department (IMD) issues colour-coded alerts for the district. Green means no warning, yellow means be aware, orange means be prepared, and red means take action. On red alert days the district administration often declares a holiday for schools and colleges.
 
-When you're done, save the file and the story appears on the blog page straight away.`,
+The sea is rough during the monsoon. Lifeguards put up red flags at beaches such as Panambur, Tannirbhavi and Someshwara, and visitors are asked to stay out of the water. Every year there are drownings along the coast, so take these warnings seriously.
+
+Fishing also stops. Under the Karnataka Coastal Fishing (Regulation) Act, mechanised boats and boats with engines over 10 HP cannot fish from June 1 to July 31. This 61-day break protects fish during breeding season. Small traditional boats can still go out, and the full fishing season reopens on August 1.
+
+At home, clear drains before the rains begin, keep a torch and charged power bank ready for power cuts, and avoid driving through flooded underpasses. Low-lying areas of the city can flood quickly during a heavy spell.`,
   },
   {
-    slug: "sample-city-roads",
-    title: "Sample story: Road works in the city centre",
+    slug: "getting-around-mangaluru-buses-trains-airport",
+    title: "Getting around Mangaluru: buses, trains and the airport",
     summary:
-      "Another placeholder. Use this space for a one- or two-sentence summary of the story.",
+      "From the city's private buses to Konkan Railway trains and flights from Bajpe, here is how to travel in and out of Mangaluru.",
     category: "City",
-    date: "2026-10-05",
+    date: "2026-10-17",
     author: "Mangalore Daily Desk",
-    body: `This is a second sample story. It shows how the blog lists several stories, newest first.
+    body: `Mangaluru's city buses are a big part of daily life. Most of them are run by private operators, and they connect the city centre at Hampankatta and the State Bank bus stand with almost every neighbourhood. Buses are frequent, cheap and show their route numbers and destinations on the front.
 
-Delete these samples once you've added real news.`,
+For longer journeys, KSRTC buses leave from the central bus stand at Bejai and run to Bengaluru, Mysuru, Udupi, Kundapura and many other towns. Several private operators also run overnight sleeper buses to Bengaluru.
+
+The city has two main railway stations: Mangaluru Central, close to the city centre, and Mangaluru Junction at Padil. Trains run south towards Kerala and Chennai, east towards Bengaluru, and north along the scenic Konkan Railway route to Goa and Mumbai.
+
+Mangaluru International Airport is at Bajpe, about 15 km north of the city centre. It has direct flights to major Indian cities and to several destinations in the Gulf, which is important for the many families in the region with relatives working in the Middle East.
+
+Auto-rickshaws and app-based cabs are easy to find across the city. Agree on the fare before starting, or ask the driver to use the meter.`,
   },
   {
-    slug: "sample-beach-festival",
-    title: "Sample story: Weekend events by the beach",
+    slug: "beaches-of-mangaluru-guide",
+    title: "Beaches of Mangaluru: Panambur, Tannirbhavi, Someshwara and Surathkal",
     summary:
-      "A third placeholder showing a different category. Categories appear as small labels.",
-    category: "Events",
-    date: "2026-10-03",
+      "Mangaluru has a beach for every mood, from busy Panambur to quiet Tannirbhavi. Here is a quick guide to the best-known ones.",
+    category: "Travel",
+    date: "2026-10-16",
     author: "Mangalore Daily Desk",
-    body: `This is a third sample story in the Events category.
+    body: `Mangaluru sits between the Arabian Sea and the Western Ghats, and its coastline is lined with beaches that are easy to reach from the city.
 
-You can use any category name you like, such as Politics, Sports, Business or Culture.`,
+Panambur Beach, next to New Mangalore Port, is the most popular. It is wide and well kept, has lifeguards and food stalls, and is a favourite place for families in the evenings. It has also hosted kite festivals and beach events over the years.
+
+Tannirbhavi Beach is quieter and cleaner, with a long stretch of sand and a tree park nearby. A fun way to get there is by the small ferry across the Gurupura river from Sultan Battery, a watchtower built in the time of Tipu Sultan.
+
+Someshwara Beach, south of the city near Ullal, is known for its large black rocks, called Rudra Paade, and the old Someshwara temple beside the sea. The currents here can be strong, so it is better for walking than swimming.
+
+Surathkal Beach, in the north of the city, has a lighthouse that you can see from far along the shore. It is close to the NITK campus and is a good spot to watch the sunset.
+
+Whichever beach you visit, follow the lifeguards' instructions and stay out of the water when red flags are up, especially during the monsoon.`,
   },
   {
-    slug: "sample-school-results",
-    title: "Sample story: Exam results announced for city schools",
+    slug: "mangalore-university-konaje-guide",
+    title: "Mangalore University: a guide to the Mangalagangothri campus",
     summary:
-      "A placeholder Education story. Use this for school, college and university news.",
+      "Founded in 1980, Mangalore University at Konaje is the main state university for the region's degree and postgraduate students.",
     category: "Education",
-    date: "2026-10-04",
+    date: "2026-10-15",
     author: "Mangalore Daily Desk",
-    body: `This is a sample Education story. Replace it with real news about schools, colleges or universities in Mangalore.
+    body: `Mangalore University was set up in 1980. Its main campus, called Mangalagangothri, is at Konaje, about 20 km from the city centre, on a green hilltop near the Kerala border.
 
-Stories with the category "Education" appear in the Education section on the homepage.`,
+The university runs postgraduate departments on its own campus in subjects across the arts, sciences, commerce and management. Many undergraduate colleges in the region are affiliated to it, so it conducts exams and awards degrees for a large number of students who never study at Konaje itself.
+
+For students, the main things to know are the admission calendar and the exam timetable. Both are published on the university's official website, and dates can change from year to year, so check there rather than relying on word of mouth.
+
+The university also has hostels, a library and sports facilities on campus, and runs research programmes leading to PhD degrees.
+
+If you are choosing a degree college in Dakshina Kannada, check whether it is affiliated to Mangalore University or is an autonomous college, because this affects the syllabus and how exams are run.`,
   },
   {
-    slug: "sample-college-admissions",
-    title: "Sample story: College admissions open for the new year",
+    slug: "nitk-surathkal-guide",
+    title: "NITK Surathkal: one of India's leading engineering institutes",
     summary:
-      "A second Education placeholder, so you can see how several stories sit together.",
+      "The National Institute of Technology Karnataka sits beside the sea at Surathkal. Here is how it started and how students get in.",
     category: "Education",
-    date: "2026-10-01",
+    date: "2026-10-14",
     author: "Mangalore Daily Desk",
-    body: `This is another sample Education story.
+    body: `The National Institute of Technology Karnataka (NITK) is in Surathkal, in the north of Mangaluru. Its campus runs right down to the sea, which makes it one of the most striking college campuses in India.
 
-Delete it once you've added real news.`,
+NITK began in 1960 as Karnataka Regional Engineering College (KREC). In 2002 it became a National Institute of Technology, and it is now an Institute of National Importance funded by the central government.
+
+The institute offers undergraduate (B.Tech) courses in most branches of engineering, along with postgraduate and PhD programmes. It is regularly ranked among the top engineering institutes in the country.
+
+Students get into the B.Tech programmes through the JEE Main exam. Seats are allotted through JoSAA counselling, which handles admissions to all the NITs, IITs and several other national institutes.
+
+For students in Dakshina Kannada, NITK is a top choice close to home. For the latest admission rules, cut-offs and fees, check the official NITK and JoSAA websites, since these change every year.`,
   },
   {
-    slug: "sample-council-meeting",
-    title: "Sample story: City council meets on development plans",
+    slug: "how-mangaluru-city-corporation-works",
+    title: "How Mangaluru City Corporation works",
     summary:
-      "A placeholder Politics story. Use this for local government and election news.",
+      "Sixty wards, a council of corporators and a mayor elected every year. Here is how the city's local government is run.",
     category: "Politics",
-    date: "2026-10-04",
+    date: "2026-10-13",
     author: "Mangalore Daily Desk",
-    body: `This is a sample Politics story. Replace it with real news about local government, elections or civic issues.
+    body: `Mangaluru City Corporation (MCC) is the local government for the city. It looks after everyday services such as roads, streetlights, drinking water, drains, waste collection and property tax.
 
-Stories with the category "Politics" appear in the Politics section on the homepage.`,
+The city is divided into 60 wards. Every five years, voters in each ward elect a corporator to represent them on the council.
+
+The council then elects a mayor and a deputy mayor from among its members. In Karnataka, the mayor's term is one year, so the city usually gets a new mayor every year during the council's five-year term. The posts are reserved by rotation for different groups, such as women or Scheduled Castes.
+
+Day-to-day administration is handled by a commissioner, who is a government officer rather than an elected member. Standing committees of corporators look after areas such as finance, public works and health.
+
+If you have a problem with a road, a streetlight or garbage collection in your area, your ward corporator is the first person to contact. You can also raise complaints directly with the corporation through its offices or helpline.`,
   },
   {
-    slug: "sample-ward-elections",
-    title: "Sample story: Preparations begin for ward elections",
-    summary: "A second Politics placeholder.",
-    category: "Politics",
-    date: "2026-10-02",
-    author: "Mangalore Daily Desk",
-    body: `This is another sample Politics story.
-
-Delete it once you've added real news.`,
-  },
-  {
-    slug: "sample-yakshagana-show",
-    title: "Sample story: Yakshagana performance draws a full house",
+    slug: "dakshina-kannada-constituencies-explained",
+    title: "Dakshina Kannada's seats: one Lok Sabha and eight Assembly constituencies",
     summary:
-      "A placeholder Culture story. Use this for festivals, arts, food and heritage.",
-    category: "Culture",
-    date: "2026-10-04",
+      "Who represents you depends on where you live. Here is how Dakshina Kannada is divided for state and national elections.",
+    category: "Politics",
+    date: "2026-10-12",
     author: "Mangalore Daily Desk",
-    body: `This is a sample Culture story. Replace it with real news about festivals, arts, food or heritage in the region.
+    body: `Dakshina Kannada district is divided into eight Assembly constituencies, each of which elects one MLA to the Karnataka Legislative Assembly in Bengaluru.
 
-Stories with the category "Culture" appear in the Culture section on the homepage.`,
+The eight constituencies are Mangaluru City North, Mangaluru City South, Mangaluru (also called Ullal), Moodbidri, Bantwal, Belthangady, Puttur and Sullia. Sullia is reserved for Scheduled Caste candidates.
+
+For national elections, the district forms the Dakshina Kannada Lok Sabha constituency, which elects one MP to Parliament in New Delhi.
+
+Assembly elections in Karnataka are held every five years, as are Lok Sabha elections. City corporation and village panchayat elections are held separately, so in a five-year period voters in the district may go to the polls several times.
+
+To check which constituency you belong to, or to make sure your name is on the voter list, use the Election Commission of India's voter services portal or contact your local electoral office.`,
   },
   {
-    slug: "sample-dasara-preparations",
-    title: "Sample story: Dasara preparations light up the city",
-    summary: "A second Culture placeholder.",
+    slug: "yakshagana-coastal-karnataka-theatre",
+    title: "Yakshagana: the all-night theatre of coastal Karnataka",
+    summary:
+      "Drums, bright costumes and stories from the epics. Yakshagana is the best-known art form of Tulu Nadu.",
     category: "Culture",
-    date: "2026-10-02",
+    date: "2026-10-11",
     author: "Mangalore Daily Desk",
-    body: `This is another sample Culture story.
+    body: `Yakshagana is a traditional theatre form from coastal Karnataka that mixes dance, music, dialogue and dramatic costumes. Its stories usually come from the Ramayana, the Mahabharata and the Puranas.
 
-Delete it once you've added real news.`,
+A performance is led by the Bhagavata, a singer who narrates the story and sets the pace. He is backed by musicians playing the chende and maddale drums and cymbals. The actors dance to the music and speak their lines on the spot, so no two shows are exactly the same.
+
+The costumes are one of the most memorable parts. Actors wear tall, glittering headdresses, heavy jewellery and bold face paint. Kings, demons and heroes each have their own style, so the audience can recognise them at a glance.
+
+Dakshina Kannada mainly follows the Tenkutittu (southern) style. Professional troupes, called melas, often linked to temples, travel from village to village during the season, which runs roughly from November to May. Traditional shows start at night and continue until dawn.
+
+Today you can also see shorter Yakshagana shows in cities, at colleges and at cultural festivals, and many young people learn it at Yakshagana schools across the region.`,
+  },
+  {
+    slug: "mangaluru-dasara-kudroli-guide",
+    title: "Mangaluru Dasara at Kudroli: idols, tableaux and lights",
+    summary:
+      "The Kudroli Gokarnanatha temple hosts one of Karnataka's biggest Dasara celebrations. Here is what to expect.",
+    category: "Culture",
+    date: "2026-10-10",
+    author: "Mangalore Daily Desk",
+    body: `Mangaluru Dasara, also called Kudla Dasara, is centred on the Sri Gokarnanatha Kshetra at Kudroli. The temple was built in 1912 and consecrated by the social reformer Sree Narayana Guru.
+
+During the nine days of Navaratri, the temple installs large, colourful idols of the Navadurgas (the nine forms of the goddess Durga), along with Sharada Mata and Maha Ganapati. Thousands of people visit every day to see them and take part in the pujas.
+
+The city is decorated with lights for the festival, and the streets around Kudroli are packed with stalls and visitors in the evenings.
+
+The highlight is the grand procession at the end of the festival. The idols are carried through the main roads of Mangaluru with tableaux, music and dance groups before they are immersed. The procession goes on late into the night and draws huge crowds.
+
+Navaratri is also when you will see Pili Vesha, the tiger dance of coastal Karnataka. Groups of performers paint their bodies with tiger stripes and dance through the streets to the beat of drums.
+
+If you are going, use public transport if you can, as parking near Kudroli is very limited during the festival.`,
   },
 ];
 

@@ -84,7 +84,7 @@ export default function Home() {
               linkLabel="View all"
             />
             <div className="mt-8">
-              <GalleryGrid photos={gallery.slice(0, 6)} />
+              <GalleryGrid photos={gallery.slice(0, 3)} layout="preview" />
             </div>
           </Container>
         </section>
