@@ -1,69 +1,94 @@
 import Image from "next/image";
+import CardCarousel from "@/components/CardCarousel";
+import Container from "@/components/Container";
+import GalleryGrid from "@/components/GalleryGrid";
+import PostCard from "@/components/PostCard";
+import SectionHeading from "@/components/SectionHeading";
+import hero from "@/herosection1.jpg";
+import { gallery } from "@/lib/gallery";
+import { getAllNews, getNewsByCategory, sections } from "@/lib/news";
 
 export default function Home() {
+  const latest = getAllNews().slice(0, 9);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <main className="w-full">
+      <h1 className="sr-only">Mangalore Daily: local news from Mangalore</h1>
+      <div className="relative">
         <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
+          src={hero}
+          alt="Mangalore city skyline lit up at night under a cloudy sky"
+          placeholder="blur"
           priority
+          sizes="100vw"
+          className="h-auto max-h-[80vh] w-full object-cover object-[center_75%]"
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background to-transparent" />
+      </div>
+
+      <Container className="py-14 sm:py-20">
+        <SectionHeading eyebrow="Today in Mangalore" title="Latest stories" live />
+
+        <div className="mt-8">
+          {latest.length > 0 ? (
+            <CardCarousel label="latest stories">
+              {latest.map((post) => (
+                <PostCard key={post.slug} post={post} />
+              ))}
+            </CardCarousel>
+          ) : (
+            <p className="text-muted">No stories yet. Check back soon.</p>
+          )}
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+      </Container>
+
+      {sections.map((section) => {
+        const posts = getNewsByCategory(section.name).slice(0, 9);
+        return (
+          <section
+            key={section.slug}
+            aria-labelledby={`section-${section.slug}`}
           >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
+            <Container className="pb-14 sm:pb-20">
+              <SectionHeading
+                id={`section-${section.slug}`}
+                title={section.name}
+                description={section.description}
+              />
+              {posts.length > 0 ? (
+                <div className="mt-8">
+                  <CardCarousel label={`${section.name.toLowerCase()} stories`}>
+                    {posts.map((post) => (
+                      <PostCard key={post.slug} post={post} />
+                    ))}
+                  </CardCarousel>
+                </div>
+              ) : (
+                <p className="mt-8 rounded-2xl border border-dashed border-line p-8 text-center text-muted">
+                  No {section.name.toLowerCase()} stories yet. Check back soon.
+                </p>
+              )}
+            </Container>
+          </section>
+        );
+      })}
+
+      {gallery.length > 0 && (
+        <section aria-labelledby="section-gallery">
+          <Container className="pb-14 sm:pb-20">
+            <SectionHeading
+              id="section-gallery"
+              eyebrow="Mangalore in pictures"
+              title="Gallery"
+              href="/gallery"
+              linkLabel="View all"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+            <div className="mt-8">
+              <GalleryGrid photos={gallery.slice(0, 6)} />
+            </div>
+          </Container>
+        </section>
+      )}
+    </main>
   );
 }
