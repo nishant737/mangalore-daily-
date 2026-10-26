@@ -5,6 +5,7 @@ import Link from "next/link";
 import { gutter } from "@/components/Container";
 import MenuButton from "@/components/MenuButton";
 import SiteFooter from "@/components/SiteFooter";
+import { siteUrl } from "@/lib/site";
 import logo from "@/logo-dark.png";
 import "./globals.css";
 
@@ -24,12 +25,13 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Mangalore Daily | Local News. Real Stories.",
     template: "%s | Mangalore Daily",
   },
   description:
-    "Daily news, events and updates from Mangalore and Dakshina Kannada. Local news. Real stories.",
+    "Daily news from Mangalore and Dakshina Kannada, with in-depth coverage of Alva's English Medium High School, Alva's PU results and Alva's Nudisiri in Moodubidire.",
   openGraph: {
     siteName: "Mangalore Daily",
     type: "website",

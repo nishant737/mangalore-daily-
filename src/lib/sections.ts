@@ -1,11 +1,14 @@
 // The homepage sections. A story appears in a section when its `category`
-// in news.ts matches the section name.
+// in news.ts matches the section name. `featured` is the slug of a story
+// shown first, in a large card, on the section page.
 
 export const sections = [
   {
     slug: "education",
     name: "Education",
-    description: "Schools, colleges, exams and admissions across the region.",
+    description:
+      "Alva's English Medium High School, Moodubidire: admissions, SSLC results, sports and student life, plus Alva's PU results and education news from the region.",
+    featured: "alvas-english-medium-high-school-moodubidire",
   },
   {
     slug: "politics",

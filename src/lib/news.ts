@@ -17,10 +17,159 @@ export type NewsPost = {
   category: string;
   date: string; // YYYY-MM-DD
   author: string;
+  keywords?: string[]; // search terms this story should rank for
   body: string;
 };
 
 export const news: NewsPost[] = [
+  {
+    slug: "alvas-english-medium-high-school-moodubidire",
+    title: "Alva's English Medium High School, Moodubidire: a complete guide for parents",
+    summary:
+      "Admissions, SSLC results, IIT coaching, sports, hostels and fees: everything families should know about Alva's English Medium High School in Moodubidire.",
+    category: "Education",
+    date: "2026-10-26",
+    author: "Mangalore Daily Desk",
+    keywords: [
+      "Alva's English Medium High School",
+      "Alva's High School Moodubidire",
+      "Alva's school admission",
+      "best English medium school Moodbidri",
+      "Alva's Education Foundation",
+      "Alva's secondary school",
+    ],
+    body: `Alva's English Medium High School is the secondary school of Alva's Education Foundation, on its campus at Vivekanandanagara, Puthige Sampige Post, Moodubidire, Dakshina Kannada. It is one of the most sought-after high schools in coastal Karnataka, and families travel from across the state to enrol their children here.
+
+The school opened in the 2011-12 academic year with 99 students and 7 teachers. It has grown quickly. Today it has around 2,500 students, 85 teachers and 50 other staff, which makes it one of the largest English medium high schools in Dakshina Kannada.
+
+Classes are kept to a maximum of 35 students, so teachers can follow each child's progress. The school day runs from 9 am to 4 pm, and transport is available. According to the headmistress's message, the school follows the NCERT syllabus, and students in Class 10 write the SSLC exam.
+
+The school's strongest record is its SSLC results. Its first five batches, from 2011-12 to 2015-16, all passed with a 100% result, and in 2015-16, 124 of 251 students passed with distinction. You can read the full year-by-year results in our story on Alva's SSLC record.
+
+Academics go beyond the textbook. The school runs regular IIT foundation coaching with experienced teachers, special coaching and counselling for slow learners, and a vacation crash course for students promoted to Class 9.
+
+Sport is a big part of school life. The campus has a 400 metre synthetic track, and the school admits talented athletes and basketball players through a sports quota, with free food, hostel and coaching for those selected. Students also learn classical and folk dance, vocal and instrumental music, and take part in Scouts and Guides.
+
+There is a 24x7 medical facility on campus, and separate hostels for boys and girls.
+
+After Class 10, most students move on to Alva's Pre-University College on the same campus, which is known for producing state rank holders in the II PUC exams every year. This school-to-PU path on one campus is a big reason parents choose Alva's.
+
+Local students get a special fee concession. To apply, use the "Enroll Your Child" form on alvasschools.com. For admissions, call +91 77602 72525 or email ao-schools@alvas.org. Fees and admission rules change each year, so confirm the details with the school office before applying.`,
+  },
+  {
+    slug: "alvas-english-medium-high-school-sslc-results",
+    title: "Alva's English Medium High School SSLC results: a 100% pass record",
+    summary:
+      "Every one of Alva's first five SSLC batches passed, with top scores reaching 618 out of 625. Here are the results year by year.",
+    category: "Education",
+    date: "2026-10-26",
+    author: "Mangalore Daily Desk",
+    keywords: [
+      "Alva's SSLC result",
+      "Alva's English Medium High School SSLC",
+      "SSLC toppers Moodubidire",
+      "Alva's school results",
+    ],
+    body: `Alva's English Medium High School in Moodubidire has built its name on its SSLC (Class 10) results. The school's first five batches all passed with a 100% result, and the number of students passing with distinction grew every year.
+
+2011-12: The first batch had 8 students. 2 passed with distinction, 4 in first class and 2 in second class. The top scorer was Mallikarjunagouda V. Patil with 574 marks (91.84%).
+
+2012-13: 39 students wrote the exam. 18 got distinction and 20 got first class. M. Shreyas S. Kamath topped the school with 612 marks (97.92%).
+
+2013-14: 69 students, with 41 distinctions and 28 first classes. Abhishek Jayakar Shetty scored 612 marks (97.92%).
+
+2014-15: 136 students, with 74 distinctions, 59 first classes and 3 second classes. Gokul Reddy K C topped with 618 marks (98.88%).
+
+2015-16: 251 students, with 124 distinctions, 124 first classes and 3 second classes. Kavya Aradhya scored 618 marks (98.88%).
+
+These figures are published by the school on alvasschools.com. Across these five years, not a single student failed, even as the batch grew from 8 students to more than 250.
+
+Teachers credit small classes of up to 35 students, extra coaching for slow learners and a crash course for students entering Class 9. Many of these students went on to Alva's Pre-University College, which regularly places students in the state's top ten II PUC ranks.
+
+For the latest SSLC results and toppers, contact the school at +91 77602 72525 or ao-schools@alvas.org.`,
+  },
+  {
+    slug: "alvas-high-school-sports-quota-admission",
+    title: "Alva's High School sports quota: free hostel, food and coaching for young athletes",
+    summary:
+      "Alva's English Medium High School admits talented athletes and girls' basketball players in Classes 8 to 10 through a sports quota. Here is how selection works.",
+    category: "Education",
+    date: "2026-10-26",
+    author: "Mangalore Daily Desk",
+    keywords: [
+      "Alva's sports quota admission",
+      "Alva's sports school Moodubidire",
+      "sports quota high school Karnataka",
+      "Alva's athletics",
+    ],
+    body: `Alva's Education Foundation is famous across Karnataka for sport, and its English Medium High School in Moodubidire offers a sports quota for talented students.
+
+The quota is open to students in Classes 8 to 10. The events covered are athletics, for both boys and girls, and basketball, for girls.
+
+Selected students receive free food, accommodation and coaching. There are separate hostels for boys and girls, and the campus has a well-kept playground with a 400 metre synthetic track.
+
+The selection process starts with a notice in newspapers in March and April. Applicants send in a filled bio-data form with attested copies of their certificates. Shortlisted students are then invited to a 20-day selection camp at Alva's Education Foundation, where boarding and coaching are provided during the camp.
+
+The school says its students have been meritorious achievers in athletics and games, and the sports quota lets children from families across the state train on one of the best school sports campuses in coastal Karnataka while continuing their studies.
+
+For the next sports quota notice and application form, watch the newspapers in March and April, or contact the school at +91 77602 72525 or ao-schools@alvas.org.`,
+  },
+  {
+    slug: "alvas-pu-college-results-karnataka-toppers",
+    title: "Alva's PU College results: how Moodubidire produces Karnataka's II PUC toppers",
+    summary:
+      "A 99.8% pass rate, 45 students in the state's top ten and a state commerce topper. Alva's PU College is one of Karnataka's strongest II PUC performers.",
+    category: "Education",
+    date: "2026-10-25",
+    author: "Mangalore Daily Desk",
+    keywords: [
+      "Alva's PU College result",
+      "Alva's PU toppers",
+      "II PUC toppers Karnataka",
+      "Alva's PU College Moodubidire",
+      "Karnataka PUC state rank",
+    ],
+    body: `Alva's Pre-University College in Moodubidire is one of the biggest PU colleges in Karnataka, and every year its students feature among the state's II PUC rank holders.
+
+In the 2024 II PUC exams, Udayavani reported that 3,493 of the college's 3,500 students passed, a pass rate of 99.8%. 45 students from its science and commerce streams were placed in the state's top ten ranks.
+
+In 2023, Ananya K A of Alva's PU College topped the whole state in the Commerce stream, Deccan Herald reported.
+
+In 2021, Deccan Herald reported that 190 students of Alva's PU College scored full marks in the II PUC exam.
+
+Many of these toppers start their journey earlier, at Alva's English Medium High School on the same campus. Students who finish their SSLC at Alva's can move straight into the PU college, with the same hostels, teachers' culture and coaching for entrance exams such as KCET, NEET and JEE.
+
+The college publishes its science and commerce top rankers each year on admissions.alvas.org. For official marks and ranks, always check the Karnataka School Examination and Assessment Board (KSEAB) results website.
+
+PU admissions open soon after the SSLC results. For details, visit admissions.alvas.org or contact the foundation at info@alvas.org or 08258-238104.`,
+  },
+  {
+    slug: "alvas-nudisiri-kannada-literary-festival",
+    title: "Alva's Nudisiri: the Kannada literary festival at Moodubidire",
+    summary:
+      "Alva's Nudisiri brings writers, artists and tens of thousands of visitors to the Vidyagiri campus to celebrate Kannada language and culture.",
+    category: "Culture",
+    date: "2026-10-24",
+    author: "Mangalore Daily Desk",
+    keywords: [
+      "Alva's Nudisiri",
+      "Nudisiri Moodubidire",
+      "Kannada literary festival",
+      "Alva's Virasat",
+      "Alva's cultural fest",
+    ],
+    body: `Alva's Nudisiri is a Kannada literary and cultural festival organised by Alva's Education Foundation at its Vidyagiri campus in Moodubidire. It celebrates Kannada literature, language and the people who keep them alive.
+
+The festival brings together writers, poets, scholars and artists from across Karnataka for talks, discussions, book releases and performances. It is usually held alongside Alva's Virasat, the foundation's national cultural festival of music and dance.
+
+Nudisiri is a free event, and it draws huge crowds. The 2018 edition was inaugurated by historian Dr Sha Shettar. Deccan Herald reported that more than 70,000 people visited the venue and over 36,000 registered as delegates, breaking previous records.
+
+In 2019, the foundation postponed Nudisiri and Virasat because of the floods that hit many parts of Karnataka that year.
+
+For students of Alva's English Medium High School and Alva's PU College, the festival is part of campus life. Students perform folk and classical dance and music on its stages and volunteer to host visitors, and the school lists excellence in classical and folk art among its main achievements.
+
+Dates for each year's festival are announced by Alva's Education Foundation. For updates, visit alvas.org or call 08258-238104.`,
+  },
   {
     slug: "alvas-education-foundation-moodubidire-guide",
     title: "Alva's Education Foundation: a guide to the Moodubidire campus",
