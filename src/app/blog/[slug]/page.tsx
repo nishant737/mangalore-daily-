@@ -3,7 +3,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Container from "@/components/Container";
 import PostCard, { CategoryBadge, PostMeta } from "@/components/PostCard";
-import { getAllNews, getNewsBySlug, news, type NewsPost } from "@/lib/news";
+import {
+  getAllNews,
+  getNewsBySlug,
+  news,
+  type NewsPost,
+} from "@/lib/news";
 import { siteName, siteUrl } from "@/lib/site";
 
 // Alva's English Medium High School, described for search engines on the
@@ -45,10 +50,33 @@ function articleJsonLd(post: NewsPost) {
     url,
     author: { "@type": "Organization", name: post.author },
     publisher: { "@type": "Organization", name: siteName, url: siteUrl },
-    about: post.slug.startsWith("alvas-english-medium-high-school")
+    about: /^alvas-(english-medium-)?high-school/.test(post.slug)
       ? alvasSchool
       : undefined,
   };
+}
+
+function faqJsonLd(faqs: NonNullable<NewsPost["faqs"]>) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: { "@type": "Answer", text: faq.answer },
+    })),
+  };
+}
+
+function JsonLd({ data }: { data: object }) {
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(data).replace(/</g, "\\u003c"),
+      }}
+    />
+  );
 }
 
 export function generateStaticParams() {
@@ -91,12 +119,8 @@ export default async function NewsPostPage(props: PageProps<"/blog/[slug]">) {
 
   return (
     <main className="w-full">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(articleJsonLd(post)).replace(/</g, "\\u003c"),
-        }}
-      />
+      <JsonLd data={articleJsonLd(post)} />
+      {post.faqs && <JsonLd data={faqJsonLd(post.faqs)} />}
       <Container className="pb-16 pt-32 sm:pt-36">
         <Link
           href="/blog"
@@ -120,11 +144,82 @@ export default async function NewsPostPage(props: PageProps<"/blog/[slug]">) {
             <PostMeta post={post} />
           </div>
 
+          {post.facts && (
+            <aside
+              aria-label="Key facts"
+              className="mt-10 rounded-2xl border border-line bg-surface p-6"
+            >
+              <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
+                Key facts
+              </h2>
+              <dl className="mt-4 grid gap-x-6 gap-y-4 sm:grid-cols-2">
+                {post.facts.map((fact) => (
+                  <div key={fact.label}>
+                    <dt className="text-sm text-subtle">{fact.label}</dt>
+                    <dd className="mt-0.5 font-medium text-foreground">
+                      {fact.value}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </aside>
+          )}
+
           <div className="mt-10 space-y-6 text-lg leading-8 text-foreground/90 sm:text-xl sm:leading-9">
             {post.body.split(/\n\s*\n/).map((paragraph, i) => (
               <p key={i}>{paragraph}</p>
             ))}
           </div>
+
+          {post.faqs && (
+            <section aria-labelledby="faq" className="mt-14">
+              <h2
+                id="faq"
+                className="font-display text-2xl font-semibold sm:text-3xl"
+              >
+                Frequently asked questions
+              </h2>
+              <div className="mt-6 divide-y divide-line border-y border-line">
+                {post.faqs.map((faq) => (
+                  <details key={faq.question} className="group py-5">
+                    <summary className="flex cursor-pointer list-none items-start justify-between gap-4 text-lg font-semibold text-foreground">
+                      <h3>{faq.question}</h3>
+                      <span
+                        aria-hidden
+                        className="text-accent transition group-open:rotate-45"
+                      >
+                        +
+                      </span>
+                    </summary>
+                    <p className="mt-3 leading-7 text-muted">{faq.answer}</p>
+                  </details>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {post.sources && (
+            <section aria-labelledby="sources" className="mt-14">
+              <h2
+                id="sources"
+                className="text-xs font-semibold uppercase tracking-[0.18em] text-foreground"
+              >
+                Sources and official links
+              </h2>
+              <ul className="mt-4 space-y-2">
+                {post.sources.map((source) => (
+                  <li key={source.url}>
+                    <a
+                      href={source.url}
+                      className="text-accent underline-offset-4 hover:text-accent-strong hover:underline"
+                    >
+                      {source.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
         </article>
 
         {more.length > 0 && (

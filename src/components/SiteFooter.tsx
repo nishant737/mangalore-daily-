@@ -6,6 +6,18 @@ import logo from "@/logo-dark.png";
 
 const linkClass = "text-muted transition hover:text-accent";
 
+// Official sites readers often need, linked from every page.
+const usefulLinks = [
+  { href: "https://kseab.karnataka.gov.in/", label: "SSLC and PUC results (KSEAB)" },
+  { href: "https://dk.nic.in/", label: "Dakshina Kannada district" },
+  { href: "https://mangaloreuniversity.ac.in/", label: "Mangalore University" },
+  {
+    href: "https://alvasschools.com/alvas-english-medium-high-school/",
+    label: "Alva's English Medium High School",
+  },
+  { href: "https://www.nitk.ac.in/", label: "NITK Surathkal" },
+];
+
 function FooterColumn({
   title,
   links,
@@ -21,9 +33,15 @@ function FooterColumn({
       <ul className="mt-5 space-y-3">
         {links.map((link) => (
           <li key={link.href}>
-            <Link href={link.href} className={linkClass}>
-              {link.label}
-            </Link>
+            {link.href.startsWith("http") ? (
+              <a href={link.href} className={linkClass}>
+                {link.label}
+              </a>
+            ) : (
+              <Link href={link.href} className={linkClass}>
+                {link.label}
+              </Link>
+            )}
           </li>
         ))}
       </ul>
@@ -35,7 +53,7 @@ export default function SiteFooter() {
   return (
     <footer className="mt-auto border-t border-line bg-surface/60">
       <Container className="grid grid-cols-2 gap-x-8 gap-y-12 py-14 lg:grid-cols-12">
-        <div className="col-span-2 lg:col-span-6">
+        <div className="col-span-2 lg:col-span-4">
           <Link href="/" className="inline-block">
             <Image src={logo} alt="Mangalore Daily" className="h-16 w-auto" />
           </Link>
@@ -45,7 +63,7 @@ export default function SiteFooter() {
           </p>
         </div>
 
-        <div className="lg:col-span-3">
+        <div className="lg:col-span-2">
           <FooterColumn
             title="Sections"
             links={sections.map((section) => ({
@@ -64,6 +82,10 @@ export default function SiteFooter() {
               { href: "/gallery", label: "Gallery" },
             ]}
           />
+        </div>
+
+        <div className="col-span-2 lg:col-span-3">
+          <FooterColumn title="Useful links" links={usefulLinks} />
         </div>
       </Container>
 

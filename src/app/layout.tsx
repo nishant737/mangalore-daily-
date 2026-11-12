@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     template: "%s | Mangalore Daily",
   },
   description:
-    "Daily news from Mangalore and Dakshina Kannada, with in-depth coverage of Alva's English Medium High School, Alva's PU results and Alva's Nudisiri in Moodubidire.",
+    "Daily news, exam results, sports and culture from Mangalore, Udupi and Dakshina Kannada. Local news. Real stories.",
   openGraph: {
     siteName: "Mangalore Daily",
     type: "website",
