@@ -12,7 +12,13 @@ export function CategoryBadge({ category }: { category: string }) {
 export function PostMeta({ post }: { post: NewsPost }) {
   return (
     <p className="text-sm text-subtle">
-      <time dateTime={post.date}>{formatDate(post.date)}</time>
+      {post.updated ? (
+        <>
+          Updated <time dateTime={post.updated}>{formatDate(post.updated)}</time>
+        </>
+      ) : (
+        <time dateTime={post.date}>{formatDate(post.date)}</time>
+      )}
       <span aria-hidden> · </span>
       {readingTime(post.body)}
     </p>

@@ -20,6 +20,7 @@ export type NewsPost = {
   summary: string;
   category: string;
   date: string; // YYYY-MM-DD
+  updated?: string; // YYYY-MM-DD, set when an older story is refreshed
   author: string;
   keywords?: string[]; // search terms this story should rank for
   facts?: { label: string; value: string }[];
@@ -50,6 +51,250 @@ const alvasLinks = {
 };
 
 export const news: NewsPost[] = [
+  {
+    slug: "alvas-institute-of-medical-sciences-mbbs-150-seats",
+    title: "Alva's Institute of Medical Sciences opens with 150 MBBS seats in Moodubidire",
+    summary:
+      "The National Medical Commission has sanctioned 150 MBBS seats for Alva's new medical college at Mijar from 2026-27, completing Alva's journey from school to medicine on one campus.",
+    category: "Education",
+    date: "2026-11-16",
+    author: "Mangalore Daily Desk",
+    keywords: [
+      "Alva's Institute of Medical Sciences",
+      "Alva's medical college MBBS seats",
+      "AIMSRC Moodubidire",
+      "MBBS colleges Dakshina Kannada",
+      "Alva's MBBS admission NEET",
+    ],
+    facts: [
+      { label: "College", value: "Alva's Institute of Medical Sciences and Research Centre" },
+      { label: "Location", value: "Mijar, Moodubidire 574225" },
+      { label: "MBBS seats", value: "150, from 2026-27" },
+      { label: "Approved by", value: "National Medical Commission (NMC)" },
+      { label: "University", value: "Rajiv Gandhi University of Health Sciences" },
+      { label: "Admission", value: "NEET UG, via KEA (85%) and MCC (15%)" },
+    ],
+    faqs: [
+      {
+        question: "How many MBBS seats does Alva's medical college have?",
+        answer:
+          "The National Medical Commission sanctioned 150 MBBS seats for Alva's Institute of Medical Sciences and Research Centre, Mijar, Moodubidire, as a new private college for the 2026-27 academic year.",
+      },
+      {
+        question: "How do I get admission to MBBS at Alva's?",
+        answer:
+          "Admission is through NEET UG. 85% of seats are filled through Karnataka counselling by the Karnataka Examinations Authority (KEA), and 15% through All India Quota counselling by the Medical Counselling Committee (MCC).",
+      },
+      {
+        question: "Which university is Alva's medical college affiliated to?",
+        answer:
+          "Alva's Institute of Medical Sciences and Research Centre is affiliated to Rajiv Gandhi University of Health Sciences (RGUHS), Bengaluru.",
+      },
+    ],
+    sources: [
+      alvasLinks.foundation,
+      alvasLinks.admissions,
+      {
+        label: "Mega Media News: NMC approves 150 MBBS seats for Alva's Medical College",
+        url: "https://megamedianews.com/milestone-achievement-national-medical-commission-approves-150-mbbs-seats-for-alvas-medical-college-moodbidri-from-academic-year-2026-27/",
+      },
+      {
+        label: "Edufever: Alva's Institute of Medical Sciences and Research Centre",
+        url: "https://www.edufever.com/alvas-institute-of-medical-sciences-and-research-centre/",
+      },
+    ],
+    body: `Moodubidire now has its own MBBS college. The National Medical Commission (NMC) has sanctioned 150 MBBS seats for Alva's Institute of Medical Sciences and Research Centre at Mijar, as a new private medical college from the 2026-27 academic year.
+
+The college is run by Alva's Education Foundation, chaired by Dr M Mohan Alva, and is affiliated to Rajiv Gandhi University of Health Sciences (RGUHS). It appears in the NMC's 2026-27 MBBS seat matrix with 150 newly added seats.
+
+Admission is through NEET UG. 85% of seats go through Karnataka's state counselling, run by the Karnataka Examinations Authority (KEA), and 15% through the All India Quota, run by the Medical Counselling Committee (MCC). The MBBS course takes four and a half years, followed by a one-year internship.
+
+The college's teaching hospital is Alva's Health Centre on Swaraj Maidan Road, Moodubidire, which has served the town for about 40 years.
+
+For families, the new college completes a full path on the Alva's campus. A child can study at Alva's English Medium High School, move to Alva's Pre-University College, prepare for NEET there, and now go on to study medicine without leaving Moodubidire. Alva's already runs colleges of Ayurveda, Homoeopathy, Nursing, Physiotherapy, Pharmacy and Naturopathy.
+
+As a new college, it has no previous NEET cut-offs. Fees for the state and management quotas are fixed each year, so confirm them with the college or on the KEA website before counselling. For details, visit admissions.alvas.org or call 08258-238104.`,
+  },
+  {
+    slug: "mangaluru-bengaluru-railway-electrified-mangaluru-central",
+    title: "Mangaluru-Bengaluru rail line now electrified, Rs 94 crore for Mangaluru Central",
+    summary:
+      "Railway Minister Ashwini Vaishnaw marked the start of electric train services between Mangaluru and Bengaluru, and announced money to rebuild Mangaluru Central station.",
+    category: "City",
+    date: "2026-11-15",
+    author: "Mangalore Daily Desk",
+    keywords: [
+      "Mangaluru Bengaluru railway electrification",
+      "Mangaluru Central Amrit Bharat",
+      "Mangaluru train news",
+    ],
+    facts: [
+      { label: "Route", value: "Mangaluru to Bengaluru, now electrified" },
+      { label: "Announced", value: "13 November 2026, Mangaluru" },
+      { label: "Mangaluru Central", value: "Rs 94 crore, Amrit Bharat Station Scheme" },
+    ],
+    sources: [
+      {
+        label: "Daijiworld: Electrification of Mangaluru-Bengaluru line a long-standing dream fulfilled",
+        url: "https://www.daijiworld.com/news/newsDisplay?newsID=1335189",
+      },
+    ],
+    body: `Electric trains can now run all the way between Mangaluru and Bengaluru. Railway Minister Ashwini Vaishnaw marked the start of electric train services on the route in Mangaluru on November 13, calling it a long-standing dream of the coast fulfilled, Daijiworld reported. The minister said he would travel to Bengaluru on the newly electrified line himself.
+
+The route through the Western Ghats has been one of the slowest and most difficult links in the state. Electric locomotives are cleaner than diesel and can haul trains more efficiently on the steep ghat sections, which should help with punctuality and allow more services over time.
+
+The minister also announced Rs 94 crore for Mangaluru Central station under the Amrit Bharat Station Scheme, the national programme to redevelop railway stations with better waiting areas, entrances, platforms and passenger facilities.
+
+In Udupi the same week, Vaishnaw spoke about doubling the Konkan Railway line, which carries trains from Mangaluru north to Goa and Mumbai.
+
+New timetables and any extra trains will be announced by South Western Railway and Southern Railway. Check the official railway apps before you travel.`,
+  },
+  {
+    slug: "alvas-pu-college-students-qualify-nda-exam",
+    title: "10 Alva's PU College students qualify in the NDA entrance exam",
+    summary:
+      "Ten students of Alva's Pre-University College, Moodubidire have cleared the UPSC's National Defence Academy and Naval Academy written exam.",
+    category: "Education",
+    date: "2026-11-15",
+    author: "Mangalore Daily Desk",
+    keywords: [
+      "Alva's NDA result",
+      "Alva's PU College NDA",
+      "NDA coaching Moodubidire",
+      "NDA qualified students Dakshina Kannada",
+    ],
+    facts: [
+      { label: "Students qualified", value: "10" },
+      { label: "Exam", value: "NDA and Naval Academy, conducted by UPSC" },
+      { label: "College", value: "Alva's PU College, Moodubidire" },
+      { label: "Reported", value: "13 October 2026" },
+    ],
+    faqs: [
+      {
+        question: "How many Alva's students qualified in the NDA exam?",
+        answer:
+          "Ten students of Alva's Pre-University College, Moodubidire qualified in the NDA and Naval Academy entrance exam conducted by the UPSC, the college reported, citing Samyukta Karnataka of October 13, 2026.",
+      },
+      {
+        question: "Does Alva's PU College give NDA coaching?",
+        answer:
+          "Yes. The college says it provides special training for students preparing for the NDA exam alongside their PU studies.",
+      },
+      {
+        question: "What happens after the NDA written exam?",
+        answer:
+          "Candidates who clear the UPSC written exam are called for the Services Selection Board (SSB) interview and a medical exam. The final merit list decides admission to the National Defence Academy and Naval Academy.",
+      },
+    ],
+    sources: [
+      alvasLinks.puCollege,
+      {
+        label: "Alva's PU College: 10 students qualify in NDA examination",
+        url: "https://alvaspucollege.org/blog/proud-achievement-10-students-of-alvas-qualify-in-nda-examination/",
+      },
+    ],
+    body: `Ten students of Alva's Pre-University College in Moodubidire have qualified in the National Defence Academy (NDA) and Naval Academy (NA) entrance exam, conducted by the Union Public Service Commission (UPSC). The result was reported by the Samyukta Karnataka newspaper on October 13, 2026, the college said.
+
+The NDA exam is one of the most competitive in the country, and the only way for students to join the Army, Navy and Air Force as officer cadets straight after Class 12. Candidates who pass the written exam go on to a five-day Services Selection Board (SSB) interview and a medical exam before the final merit list.
+
+Alva's PU College runs special NDA training alongside the regular PU syllabus, so students can prepare for the defence exam while studying for their II PUC board exams. Alva's chairman Dr M Mohan Alva congratulated the students.
+
+It is not a first for the college. In 2024, Udayavani reported that 12 Alva's PU students had cleared the NDA and NA exam.
+
+For many families, the defence route starts earlier, at Alva's English Medium High School, where students take part in Scouts and Guides and sport on a campus built around discipline and fitness. For PU admissions, visit admissions.alvas.org or call 08258-238104.`,
+  },
+  {
+    slug: "udupi-cooperative-week-2026",
+    title: "Cooperative Week 2026: a week of events across Udupi, closing in Mangaluru",
+    summary:
+      "The 73rd All India Cooperative Week runs from November 14 to 20, with programmes at Santekatte, Koteshwara, Kota, Bajagoli and Padubidri.",
+    category: "Politics",
+    date: "2026-11-14",
+    author: "Mangalore Daily Desk",
+    keywords: [
+      "Cooperative Week 2026 Udupi",
+      "All India Cooperative Week",
+      "cooperative societies Udupi",
+    ],
+    facts: [
+      { label: "Dates", value: "14 to 20 November 2026" },
+      { label: "Opening", value: "Hotel Brindavan, Santekatte" },
+      { label: "State valedictory", value: "20 November, Karavali Utsava Grounds, Mangaluru" },
+    ],
+    sources: [
+      {
+        label: "News Karnataka: 73rd All India Cooperative Week across Udupi",
+        url: "https://newskarnataka.com/udupi/73rd-all-india-cooperative-week-to-be-celebrated-across-udupi-from-nov-14/12112026/",
+      },
+    ],
+    body: `Udupi's cooperative societies are marking the 73rd All India Cooperative Week with programmes across the district from November 14 to 20, News Karnataka reported. The week was announced by B. Jayakar Shetty Indrali, president of the Udupi District Cooperative Union.
+
+Cooperatives are a big part of life on the coast. Farmers' service societies, credit cooperatives and the district cooperative bank give loans, collect deposits and support agriculture in almost every village.
+
+The week opened on November 14 at Hotel Brindavan, Santekatte, on the role of cooperatives in sustainable development. Each day has its own theme and venue: digitisation of cooperatives at Koteshwara on November 15, cooperative education and training at Kota on November 16, value addition and brand building at Bajagoli on November 17, public-private partnerships at Padubidri on November 18, and the participation of women and youth at Koteshwara on November 19.
+
+The state-level closing programme is on November 20 at the Karavali Utsava Grounds in Mangaluru, on cooperatives for environmental conservation, gender equality and world peace.
+
+The programmes are organised with the Karnataka State Cooperative Federation and the Department of Cooperation, and are open to members of cooperative societies.`,
+  },
+  {
+    slug: "alvas-anil-mascarenhas-kupa-best-teacher-award",
+    title: "Alva's teacher Anil Mascarenhas wins KUPA Best Teacher Award",
+    summary:
+      "The Alva's Central School coordinator was honoured by the Karnataka Unaided Pre-University Colleges Management Association at a ceremony in Bengaluru.",
+    category: "Education",
+    date: "2026-11-14",
+    author: "Mangalore Daily Desk",
+    keywords: [
+      "Anil Mascarenhas Alva's",
+      "KUPA Best Teacher Award",
+      "Alva's Central School",
+      "Alva's teachers",
+    ],
+    sources: [
+      alvasLinks.schools,
+      {
+        label: "Alva's PU College: Anil Mascarenhas honoured with Best Teacher Award by KUPA",
+        url: "https://alvaspucollege.org/blog/alvas-anil-mascarenhas-honoured-with-best-teacher-award-by-kupa/",
+      },
+    ],
+    body: `Anil Mascarenhas, a science educator at Alva's Education Foundation in Moodubidire, has received the Best Teacher Award from the Karnataka Unaided Pre-University Colleges Management Association (KUPA). The award was presented at the Siri Matrushree International Park Auditorium in Bengaluru.
+
+Mascarenhas is coordinator of the CBSE division at Alva's Central School. He guides students preparing for CET, NEET and JEE, and has led many student science projects and exhibitions. He was one of six teachers from Dakshina Kannada selected for the award.
+
+It is not his first honour. He has earlier received the Homi J. Bhabha Award for outstanding achievement in radiation physics, and the Baden-Powell Award from Mangalore University in 1996-97.
+
+Behind Alva's long run of SSLC and PU results is a large team of teachers. Alva's English Medium High School alone has about 85 teachers for around 2,500 students, with classes kept to 35, and the foundation's schools follow students from their early years through to Class 12.`,
+  },
+  {
+    slug: "mangaluru-lpg-storage-cavern-bala",
+    title: "India's largest underground LPG cavern at Bala, Mangaluru: what it is and why it matters",
+    summary:
+      "The HPCL cavern, dug deep into rock near Mangaluru, stores propane and butane to protect India's cooking gas supply. It was set to be inaugurated on November 13.",
+    category: "City",
+    date: "2026-11-13",
+    author: "Mangalore Daily Desk",
+    keywords: [
+      "Mangaluru LPG cavern",
+      "HPCL Bala LPG storage",
+      "underground LPG storage India",
+    ],
+    sources: [
+      {
+        label: "Daijiworld: PM to virtually inaugurate India's largest underground LPG cavern",
+        url: "https://www.daijiworld.com/news/newsDisplay?newsID=1335094",
+      },
+    ],
+    body: `Mangaluru is now home to India's largest underground LPG storage cavern. The facility at Bala was scheduled to be inaugurated virtually by Prime Minister Narendra Modi on November 13, as part of projects worth Rs 15,600 crore launched during his visit to Bengaluru and Mysuru, Daijiworld reported.
+
+The cavern belongs to Hindustan Petroleum Corporation Limited (HPCL) and was built by Megha Engineering and Infrastructures Limited (MEIL). Work began in 2019, and the project cost about Rs 850 crore.
+
+Instead of steel tanks above ground, the gas is stored in huge chambers carved out of solid rock deep below the surface. There are two chambers, one for propane and one for butane, the two gases that are blended to make the LPG in household cylinders.
+
+Underground storage is safer and takes up far less land than tank farms, and it lets India keep a larger buffer of cooking gas in case imports are disrupted.
+
+Mangaluru already has a port, a refinery and one of India's strategic crude oil reserves, so the new cavern adds to the city's role in the country's energy security.`,
+  },
   {
     slug: "mangaluru-airport-terminal-expansion-2029",
     title: "Mangaluru airport begins terminal expansion to handle 5.2 million passengers",
@@ -525,6 +770,7 @@ For sports quota details, contact the school at +91 77602 72525 or ao-schools@al
       "From 574 in its first year to 624 and a state second rank, here are the highest SSLC scores reported by Alva's English Medium High School, Moodubidire.",
     category: "Education",
     date: "2026-11-08",
+    updated: "2026-11-16",
     author: "Mangalore Daily Desk",
     keywords: [
       "Alva's SSLC highest marks",
@@ -670,6 +916,7 @@ Reports say the Shakti scheme, which gives women free travel on state buses with
       "Admissions, SSLC results, IIT coaching, sports, hostels and fees: everything families should know about Alva's English Medium High School in Moodubidire.",
     category: "Education",
     date: "2026-10-26",
+    updated: "2026-11-16",
     author: "Mangalore Daily Desk",
     keywords: [
       "Alva's English Medium High School",
@@ -734,7 +981,7 @@ Sport is a big part of school life. The campus has a 400 metre synthetic track, 
 
 There is a 24x7 medical facility on campus, and separate hostels for boys and girls.
 
-After Class 10, most students move on to Alva's Pre-University College on the same campus, which is known for producing state rank holders in the II PUC exams every year. This school-to-PU path on one campus is a big reason parents choose Alva's.
+After Class 10, most students move on to Alva's Pre-University College on the same campus, which is known for producing state rank holders in the II PUC exams every year. This school-to-PU path on one campus is a big reason parents choose Alva's, and since 2026-27 it can continue all the way to an MBBS degree at the new Alva's Institute of Medical Sciences at Mijar.
 
 Local students get a special fee concession. To apply, use the "Enroll Your Child" form on alvasschools.com. For admissions, call +91 77602 72525 or email ao-schools@alvas.org. Fees and admission rules change each year, so confirm the details with the school office before applying.`,
   },

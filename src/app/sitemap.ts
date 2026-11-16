@@ -23,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...posts.map((post) => ({
       url: `${siteUrl}/blog/${post.slug}`,
-      lastModified: post.date,
+      lastModified: post.updated ?? post.date,
       changeFrequency: "monthly" as const,
       priority: post.slug.startsWith("alvas-") ? 0.8 : 0.6,
     })),

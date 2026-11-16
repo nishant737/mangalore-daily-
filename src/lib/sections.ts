@@ -15,6 +15,7 @@ export const sections: Section[] = [
     name: "Education",
     description:
       "Schools, colleges, exam results and admissions across coastal Karnataka.",
+    featured: "alvas-english-medium-high-school-moodubidire",
   },
   {
     slug: "sports",
