@@ -52,6 +52,89 @@ const alvasLinks = {
 
 export const news: NewsPost[] = [
   {
+    slug: "alvas-residential-school-moodubidire-hostel-guide",
+    title: "Alva's residential school, Moodubidire: hostels, study hours and daily life",
+    summary:
+      "Alva's Schools offers boarding from Class 5 to Class 10, with separate hostels for boys and girls, full-time wardens and teacher-guided evening study. Here is what parents should know.",
+    category: "Education",
+    date: "2026-11-21",
+    author: "Mangalore Daily Desk",
+    keywords: [
+      "Alva's residential school",
+      "Alva's hostel Moodubidire",
+      "Alva's boarding school",
+      "residential school Mangalore",
+      "best residential school Dakshina Kannada",
+      "Alva's English Medium High School hostel",
+    ],
+    facts: [
+      { label: "Hostel classes", value: "Class 5 to Class 10" },
+      { label: "Hostels", value: "Separate for boys and girls" },
+      { label: "Supervision", value: "Full-time wardens, managed by Alva's" },
+      { label: "Guided study hours", value: "4 pm to 6 pm, Classes 6 to 10" },
+      { label: "Medical care", value: "24x7 on campus" },
+      { label: "Admissions", value: "+91 77602 72525, ao-schools@alvas.org" },
+    ],
+    faqs: [
+      {
+        question: "Does Alva's have a residential school?",
+        answer:
+          "Yes. Alva's Schools in Moodubidire offers hostel facilities for students from Class 5 to Class 10, with separate hostels for boys and girls on the Alva's Education Foundation campus.",
+      },
+      {
+        question: "From which class can children stay in the Alva's hostel?",
+        answer:
+          "The school lists hostel facilities for Class 5 to Class 10. Teacher-guided study hours are provided for hostel students from Class 6 to Class 10.",
+      },
+      {
+        question: "Who looks after children in the Alva's hostels?",
+        answer:
+          "The hostels are run by full-time wardens under the constant supervision of the management. The school says discipline of a high order is insisted upon, and parents or guardians are not allowed to stay in the hostels with their children.",
+      },
+      {
+        question: "What is the daily study routine for Alva's hostel students?",
+        answer:
+          "School runs from 9 am to 4 pm. Hostel students from Class 6 to Class 10 then have teacher-guided study hours from 4 pm to 6 pm.",
+      },
+      {
+        question: "Is food and transport included for Alva's hostel students?",
+        answer:
+          "The school says hostel students are provided wholesome food and conveyance from the hostel to school and back.",
+      },
+      {
+        question: "What are the fees for the Alva's residential school?",
+        answer:
+          "Alva's does not publish hostel fees on its website, and figures on third-party listings vary widely. Contact the admissions office on +91 77602 72525 or ao-schools@alvas.org for the current fee structure. Local students get a special fee concession.",
+      },
+    ],
+    sources: [
+      {
+        label: "Alva's Schools: Our facilities (hostel and study hours)",
+        url: "https://alvasschools.com/our-facilities/",
+      },
+      alvasLinks.highSchool,
+      alvasLinks.schools,
+      alvasLinks.foundation,
+    ],
+    body: `For many families in Karnataka, Alva's in Moodubidire is not just a day school but a home away from home. Alva's Schools offers residential schooling from Class 5 to Class 10, with hostels on the Alva's Education Foundation campus, about 35 km from Mangaluru.
+
+Boys and girls stay in separate hostels. According to the school, the hostels are managed by full-time wardens under the constant supervision of the management, and "discipline of high order is insisted upon". Parents and guardians are not allowed to stay in the hostels with their children.
+
+The school day runs from 9 am to 4 pm. For hostel students from Class 6 to Class 10, the day continues with teacher-guided study hours from 4 pm to 6 pm, so children get help with homework and revision from their own teachers rather than studying alone. The school says hostel students also get wholesome food, and transport from the hostel to school and back.
+
+The campus has a 24x7 medical facility, and a counselling centre called Mannassu supports students' well-being. For a child living away from home for the first time, these matter as much as classrooms.
+
+Hostel students share the same school life as day scholars. Alva's English Medium High School keeps classes to a maximum of 35 students, runs IIT foundation coaching, and has a long record of strong SSLC results, including a 100% pass for each of its first five batches and a top score of 624 out of 625. Students also learn classical and folk dance and music, take part in Scouts and Guides, and train on a 400 metre synthetic track. Talented athletes can join through a sports quota, which covers hostel, food and coaching free of cost.
+
+Living on campus also puts students at the heart of events like Alva's Nudisiri-Virasat, which returns from January 6 to 10, 2027, with Alva's Vidyarthisiri, the students' festival, on January 8.
+
+After Class 10, many residential students stay on for Alva's Pre-University College, which also has hostels, and some go on to the foundation's degree, engineering and health science colleges, including the new Alva's Institute of Medical Sciences.
+
+Before you apply, visit the campus and ask to see the hostel, the dining hall and the study rooms. Ask about the daily timetable, weekend outings, phone calls home, the medical set-up, and the current fees, which are not published online. Alva's School website also lists Kannada medium, CBSE (Alva's Central School) and ICSE schools on the campus, so ask which school and medium suits your child.
+
+For admissions, call +91 77602 72525 or email ao-schools@alvas.org. The school is at Vivekanandanagara, Puthige Sampige Post, Moodubidire 574227.`,
+  },
+  {
     slug: "alvas-institute-of-medical-sciences-mbbs-150-seats",
     title: "Alva's Institute of Medical Sciences opens with 150 MBBS seats in Moodubidire",
     summary:
@@ -770,7 +853,7 @@ For sports quota details, contact the school at +91 77602 72525 or ao-schools@al
       "From 574 in its first year to 624 and a state second rank, here are the highest SSLC scores reported by Alva's English Medium High School, Moodubidire.",
     category: "Education",
     date: "2026-11-08",
-    updated: "2026-11-16",
+    updated: "2026-11-21",
     author: "Mangalore Daily Desk",
     keywords: [
       "Alva's SSLC highest marks",
@@ -916,7 +999,7 @@ Reports say the Shakti scheme, which gives women free travel on state buses with
       "Admissions, SSLC results, IIT coaching, sports, hostels and fees: everything families should know about Alva's English Medium High School in Moodubidire.",
     category: "Education",
     date: "2026-10-26",
-    updated: "2026-11-16",
+    updated: "2026-11-21",
     author: "Mangalore Daily Desk",
     keywords: [
       "Alva's English Medium High School",
@@ -979,7 +1062,7 @@ Academics go beyond the textbook. The school runs regular IIT foundation coachin
 
 Sport is a big part of school life. The campus has a 400 metre synthetic track, and the school admits talented athletes and basketball players through a sports quota, with free food, hostel and coaching for those selected. Students also learn classical and folk dance, vocal and instrumental music, and take part in Scouts and Guides.
 
-There is a 24x7 medical facility on campus, and separate hostels for boys and girls.
+There is a 24x7 medical facility on campus. For boarders, Alva's runs separate hostels for boys and girls from Class 5 to Class 10, with full-time wardens and teacher-guided study hours from 4 pm to 6 pm. Our guide to Alva's residential school covers hostel life in detail.
 
 After Class 10, most students move on to Alva's Pre-University College on the same campus, which is known for producing state rank holders in the II PUC exams every year. This school-to-PU path on one campus is a big reason parents choose Alva's, and since 2026-27 it can continue all the way to an MBBS degree at the new Alva's Institute of Medical Sciences at Mijar.
 
