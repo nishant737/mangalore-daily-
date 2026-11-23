@@ -16,6 +16,16 @@ import { siteName, siteUrl } from "@/lib/site";
 const alvasSchool = {
   "@type": "School",
   name: "Alva's English Medium High School",
+  alternateName: [
+    "Alva's High School Moodubidire",
+    "Alvas School Moodbidri",
+    "Alva's School Mudbidri",
+    "Alva's Schools Mangalore",
+    "Alva's Residential School",
+  ],
+  description:
+    "English medium high school with separate boys' and girls' hostels from Class 5 to Class 10, on the Alva's Education Foundation campus in Moodubidire, about 35 km from Mangaluru.",
+  areaServed: ["Mangaluru", "Dakshina Kannada", "Udupi", "Karnataka"],
   url: "https://alvasschools.com/alvas-english-medium-high-school/",
   telephone: "+91-7760272525",
   email: "ao-schools@alvas.org",
@@ -50,7 +60,9 @@ function articleJsonLd(post: NewsPost) {
     url,
     author: { "@type": "Organization", name: post.author },
     publisher: { "@type": "Organization", name: siteName, url: siteUrl },
-    about: /^alvas-(english-medium-)?high-school/.test(post.slug)
+    about: /^(alvas-(english-medium-)?high-school|alvas-residential-school|alvas-free-residential|alvas-cbse|best-schools-in-mangalore)/.test(
+      post.slug,
+    )
       ? alvasSchool
       : undefined,
   };
