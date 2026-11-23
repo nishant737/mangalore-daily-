@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import Container from "@/components/Container";
 import Eyebrow from "@/components/Eyebrow";
 import PostCard from "@/components/PostCard";
+import { breadcrumbJsonLd, JsonLd } from "@/lib/seo";
+import { siteUrl } from "@/lib/site";
 import {
   getNewsByCategory,
   getNewsBySlug,
@@ -47,6 +49,32 @@ export default async function CategoryPage(
 
   return (
     <main className="w-full">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          name: `${section.name} News`,
+          description: section.description,
+          url: `${siteUrl}/category/${section.slug}`,
+          mainEntity: {
+            "@type": "ItemList",
+            itemListElement: [...(featured ? [featured] : []), ...posts].map(
+              (post, i) => ({
+                "@type": "ListItem",
+                position: i + 1,
+                url: `${siteUrl}/blog/${post.slug}`,
+                name: post.title,
+              }),
+            ),
+          },
+        }}
+      />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: section.name, path: `/category/${section.slug}` },
+        ])}
+      />
       <Container className="pb-16 pt-32 sm:pt-36">
         <Link
           href="/"

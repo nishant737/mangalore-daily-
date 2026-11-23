@@ -6,6 +6,7 @@ import GalleryGrid from "@/components/GalleryGrid";
 import { gallery } from "@/lib/gallery";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/gallery" },
   title: "Gallery",
   description: "Photos of Mangalore and Dakshina Kannada from Mangalore Daily.",
 };

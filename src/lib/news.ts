@@ -132,19 +132,33 @@ export const news: NewsPost[] = [
     ],
     body: `"Which is the best school in Mangalore?" is one of the most common questions parents in Dakshina Kannada ask, especially as admissions for 2027-28 approach. There is no official ranking, so the honest answer depends on what your child needs. Here is how to compare schools, using results and facts rather than advertising.
 
+## 1. Compare board exam results
+
 Start with board exam results. Dakshina Kannada was the top district in Karnataka in SSLC 2026 with a 98.40% pass rate, and within the district, Moodubidire was the best-performing taluk. Ask any school for its last five years of SSLC or CBSE Class 10 results, including the number of distinctions, not just its topper.
 
 On that measure, the Alva's schools in Moodubidire, about 35 km from Mangalore city, are hard to match. Alva's English Medium High School's first five SSLC batches all passed with a 100% result, and its highest reported score is 624 out of 625, by Pranshula Prashanth, who was second in the state in 2018. In SSLC 2026, Shadhvi P V of Alva's School scored 622. Alva's CBSE school recorded a 100% Class 10 result in 2026 for the sixth year in a row, with 46 students above 95%.
 
+## 2. Choose the board and medium
+
 Decide on the board and medium. Families near Mangalore can choose between the state syllabus (SSLC), CBSE and ICSE, in English or Kannada medium. The Alva's campus offers all of these: Alva's English Medium High School and Alva's Kannada Medium School write the SSLC, Alva's Central School follows CBSE, and there is an ICSE primary school.
+
+## 3. Decide whether you need boarding
 
 Think about boarding. If you live outside the city or want a structured routine, a residential school can make a big difference. Alva's runs separate hostels for boys and girls from Class 5 to Class 10, with full-time wardens, teacher-guided study hours from 4 pm to 6 pm, and a 24x7 medical facility. Alva's Kannada Medium School goes further, offering completely free residential education to the 200 students it selects each year. For 2026-27, 23,041 children applied.
 
+## 4. Check class sizes and support
+
 Look at class sizes and support. Smaller classes mean more attention. Alva's English Medium High School keeps classes to a maximum of 35, and offers IIT foundation coaching, extra coaching for students who need it and a counselling centre.
+
+## 5. Look beyond marks
 
 Look beyond marks. Sport, arts and culture shape a child as much as exams. Alva's athletes won 26 medals at the 2026 South Zone Junior Athletics Championship, students perform at the Alva's Nudisiri-Virasat festival every January, and the high school offers a sports quota with free hostel and coaching.
 
+## 6. Plan for after Class 10
+
 Think about the path after Class 10. A school with a strong PU college on the same campus saves a stressful move at 16. Alva's PU College produced Karnataka's Commerce topper in 2026 with a perfect 600, and from 2026-27 the campus also has a medical college with 150 MBBS seats.
+
+## Other schools to consider
 
 Mangaluru city also has many long-established schools that parents consider, such as Canara High School, St Aloysius and Sharada Vidyalaya. Whichever schools you shortlist, visit in person, meet the teachers, see the hostel if you need one, and ask for fees in writing.
 
@@ -215,15 +229,23 @@ For admissions to Alva's schools, call +91 77602 72525 or email ao-schools@alvas
     ],
     body: `Few schools in Karnataka are as hard to get into as Alva's Kannada Medium School in Moodubidire. For the 2026-27 academic year, 23,041 students applied for just 200 places in Classes 6 to 9, Kannada Prabha reported, and 20,146 of them turned up on a Sunday in February to write the entrance test.
 
+## Why so many apply
+
 The reason is simple: for those selected, it is completely free residential education. Students live on the Alva's campus, study in the Kannada medium school and pay no fees. Kannada Prabha reported that Alva's Education Foundation chairman Dr M Mohan Alva has spent more than Rs 140 crore on these students so far, working out to about Rs 1.5 lakh per student every year.
 
+## The entrance test
+
 The entrance test was held at five centres on the Vidyagiri and Puttige campuses. It carried 150 marks, lasted two and a half hours, and covered all subjects with a focus on reasoning ability. The top 200 students were selected. Candidates came from across Karnataka, and from the Kasaragod and Maharashtra border areas.
+
+## Hostel life
 
 Residential students live in Alva's separate hostels for boys and girls, run by full-time wardens, with teacher-guided study hours from 4 pm to 6 pm. The campus has a 24x7 medical facility and a counselling centre.
 
 The results speak for themselves. Alva's Kannada medium high school has a long record of 100% SSLC results, and Moodubidire was the best-performing taluk in Dakshina Kannada in SSLC 2026. Many of its students go on to Alva's PU College and to professional courses.
 
 For families who prefer English medium, Alva's English Medium High School and Alva's Central School (CBSE) on the same campus also offer hostels, on a fee-paying basis. Our guide to Alva's residential school explains hostel life in detail.
+
+## Next admissions
 
 Dates for the 2027-28 entrance test have not been announced yet. Last year's test was held in February. For updates, contact Alva's Schools on +91 77602 72525 or ao-schools@alvas.org.`,
   },
@@ -444,23 +466,41 @@ For admissions, contact Alva's Schools on +91 77602 72525 or ao-schools@alvas.or
     ],
     body: `For many families in Karnataka, Alva's in Moodubidire is not just a day school but a home away from home. Alva's Schools offers residential schooling from Class 5 to Class 10, with hostels on the Alva's Education Foundation campus, about 35 km from Mangaluru.
 
+## Hostels and supervision
+
 Boys and girls stay in separate hostels. According to the school, the hostels are managed by full-time wardens under the constant supervision of the management, and "discipline of high order is insisted upon". Parents and guardians are not allowed to stay in the hostels with their children.
+
+## Daily routine and study hours
 
 The school day runs from 9 am to 4 pm. For hostel students from Class 6 to Class 10, the day continues with teacher-guided study hours from 4 pm to 6 pm, so children get help with homework and revision from their own teachers rather than studying alone. The school says hostel students also get wholesome food, and transport from the hostel to school and back.
 
+## Health and well-being
+
 The campus has a 24x7 medical facility, and a counselling centre called Mannassu supports students' well-being. For a child living away from home for the first time, these matter as much as classrooms.
+
+## School life and results
 
 Hostel students share the same school life as day scholars. Alva's English Medium High School keeps classes to a maximum of 35 students, runs IIT foundation coaching, and has a long record of strong SSLC results, including a 100% pass for each of its first five batches and a top score of 624 out of 625. Students also learn classical and folk dance and music, take part in Scouts and Guides, and train on a 400 metre synthetic track. Talented athletes can join through a sports quota, which covers hostel, food and coaching free of cost.
 
+## Choosing a school: English, CBSE or free Kannada medium
+
 Families have three boards and mediums to choose from. Alva's English Medium High School writes the state SSLC exam. Alva's Central School follows CBSE, and in 2026 recorded a 100% Class 10 result for the sixth year in a row, with 46 students above 95%. And Alva's Kannada Medium School offers completely free residential education to the students it selects through a highly competitive entrance test: for 2026-27, 23,041 children applied for 200 seats.
+
+## Sport, festivals and life on campus
 
 Sport is part of hostel life too. In September 2026, Alva's won titles in 12 events at the Dakshina Kannada district-level Dasara sports meet, Udayavani reported.
 
 Living on campus also puts students at the heart of events like Alva's Nudisiri-Virasat, which returns from January 6 to 10, 2027, with Alva's Vidyarthisiri, the students' festival, on January 8.
 
+## After Class 10
+
 After Class 10, many residential students stay on for Alva's Pre-University College, which also has hostels, and some go on to the foundation's degree, engineering and health science colleges, including the new Alva's Institute of Medical Sciences.
 
+## Questions to ask on a campus visit
+
 Before you apply, visit the campus and ask to see the hostel, the dining hall and the study rooms. Ask about the daily timetable, weekend outings, phone calls home, the medical set-up, and the current fees, which are not published online. The Alva's Schools website also lists an ICSE primary school on the campus, so ask which school and medium suits your child.
+
+## How to apply
 
 For admissions, call +91 77602 72525 or email ao-schools@alvas.org. The school is at Vivekanandanagara, Puthige Sampige Post, Moodubidire 574227.`,
   },
@@ -1405,19 +1445,33 @@ Reports say the Shakti scheme, which gives women free travel on state buses with
     sources: [alvasLinks.highSchool, alvasLinks.schools, alvasLinks.foundation],
     body: `Alva's English Medium High School is the secondary school of Alva's Education Foundation, on its campus at Vivekanandanagara, Puthige Sampige Post, Moodubidire, Dakshina Kannada. It is one of the most sought-after high schools in coastal Karnataka, and families travel from across the state to enrol their children here.
 
+## History and size
+
 The school opened in the 2011-12 academic year with 99 students and 7 teachers. It has grown quickly. Today it has around 2,500 students, 85 teachers and 50 other staff, which makes it one of the largest English medium high schools in Dakshina Kannada.
+
+## Classes and syllabus
 
 Classes are kept to a maximum of 35 students, so teachers can follow each child's progress. The school day runs from 9 am to 4 pm, and transport is available. According to the headmistress's message, the school follows the NCERT syllabus, and students in Class 10 write the SSLC exam.
 
+## SSLC results
+
 The school's strongest record is its SSLC results. Its first five batches, from 2011-12 to 2015-16, all passed with a 100% result, and in 2015-16, 124 of 251 students passed with distinction. Its highest reported score is 624 out of 625, by Pranshula Prashanth in 2018, who was second in Karnataka. In SSLC 2026, Shadhvi P V of Alva's School scored 622, and Moodubidire was the best taluk in Dakshina Kannada, the state's top district.
 
+## Coaching and academic support
+
 Academics go beyond the textbook. The school runs regular IIT foundation coaching with experienced teachers, special coaching and counselling for slow learners, and a vacation crash course for students promoted to Class 9.
+
+## Sports and the arts
 
 Sport is a big part of school life. The campus has a 400 metre synthetic track, and the school admits talented athletes and basketball players through a sports quota, with free food, hostel and coaching for those selected. Students also learn classical and folk dance, vocal and instrumental music, and take part in Scouts and Guides.
 
 There is a 24x7 medical facility on campus. For boarders, Alva's runs separate hostels for boys and girls from Class 5 to Class 10, with full-time wardens and teacher-guided study hours from 4 pm to 6 pm. Our guide to Alva's residential school covers hostel life in detail.
 
+## After Class 10
+
 After Class 10, most students move on to Alva's Pre-University College on the same campus, which is known for producing state rank holders in the II PUC exams every year. This school-to-PU path on one campus is a big reason parents choose Alva's, and since 2026-27 it can continue all the way to an MBBS degree at the new Alva's Institute of Medical Sciences at Mijar.
+
+## Admissions and fees
 
 Local students get a special fee concession. To apply, use the "Enroll Your Child" form on alvasschools.com. For admissions, call +91 77602 72525 or email ao-schools@alvas.org. Fees and admission rules change each year, so confirm the details with the school office before applying.`,
   },
@@ -1792,6 +1846,15 @@ Navaratri is also when you will see Pili Vesha, the tiger dance of coastal Karna
 
 If you are going, use public transport if you can, as parking near Kudroli is very limited during the festival.`,
   },
+];
+
+// The evergreen Alva's guides, linked from every Alva's story so readers
+// and search engines can reach them from anywhere.
+export const alvasGuides = [
+  "best-schools-in-mangalore-parents-guide",
+  "alvas-residential-school-moodubidire-hostel-guide",
+  "alvas-english-medium-high-school-moodubidire",
+  "alvas-free-residential-kannada-medium-school-admission",
 ];
 
 export function getSection(slug: string) {

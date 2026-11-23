@@ -4,46 +4,20 @@ import { notFound } from "next/navigation";
 import Container from "@/components/Container";
 import PostCard, { CategoryBadge, PostMeta } from "@/components/PostCard";
 import {
+  alvasGuides,
   getAllNews,
   getNewsBySlug,
+  getSection,
   news,
   type NewsPost,
 } from "@/lib/news";
-import { siteName, siteUrl } from "@/lib/site";
-
-// Alva's English Medium High School, described for search engines on the
-// stories about it.
-const alvasSchool = {
-  "@type": "School",
-  name: "Alva's English Medium High School",
-  alternateName: [
-    "Alva's High School Moodubidire",
-    "Alvas School Moodbidri",
-    "Alva's School Mudbidri",
-    "Alva's Schools Mangalore",
-    "Alva's Residential School",
-  ],
-  description:
-    "English medium high school with separate boys' and girls' hostels from Class 5 to Class 10, on the Alva's Education Foundation campus in Moodubidire, about 35 km from Mangaluru.",
-  areaServed: ["Mangaluru", "Dakshina Kannada", "Udupi", "Karnataka"],
-  url: "https://alvasschools.com/alvas-english-medium-high-school/",
-  telephone: "+91-7760272525",
-  email: "ao-schools@alvas.org",
-  foundingDate: "2011",
-  parentOrganization: {
-    "@type": "EducationalOrganization",
-    name: "Alva's Education Foundation",
-    url: "https://alvas.org",
-  },
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Vivekanandanagara, Puthige Sampige Post",
-    addressLocality: "Moodubidire",
-    addressRegion: "Karnataka",
-    postalCode: "574227",
-    addressCountry: "IN",
-  },
-};
+import {
+  alvasSchool,
+  breadcrumbJsonLd,
+  JsonLd,
+  publisher,
+} from "@/lib/seo";
+import { siteUrl } from "@/lib/site";
 
 function articleJsonLd(post: NewsPost) {
   const url = `${siteUrl}/blog/${post.slug}`;
@@ -56,16 +30,28 @@ function articleJsonLd(post: NewsPost) {
     dateModified: post.updated ?? post.date,
     articleSection: post.category,
     keywords: post.keywords?.join(", "),
+    inLanguage: "en-IN",
+    isAccessibleForFree: true,
+    image: `${url}/opengraph-image`,
     mainEntityOfPage: url,
     url,
-    author: { "@type": "Organization", name: post.author },
-    publisher: { "@type": "Organization", name: siteName, url: siteUrl },
+    author: { "@type": "Organization", name: post.author, url: `${siteUrl}/about` },
+    publisher,
+    // Lets voice assistants read the summary and key facts aloud.
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["[data-speakable]"],
+    },
     about: /^(alvas-(english-medium-)?high-school|alvas-residential-school|alvas-free-residential|alvas-cbse|best-schools-in-mangalore)/.test(
       post.slug,
     )
       ? alvasSchool
       : undefined,
   };
+}
+
+function isAlvasTopic(post: NewsPost) {
+  return /^(alvas-|best-schools-)/.test(post.slug);
 }
 
 function faqJsonLd(faqs: NonNullable<NewsPost["faqs"]>) {
@@ -78,17 +64,6 @@ function faqJsonLd(faqs: NonNullable<NewsPost["faqs"]>) {
       acceptedAnswer: { "@type": "Answer", text: faq.answer },
     })),
   };
-}
-
-function JsonLd({ data }: { data: object }) {
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify(data).replace(/</g, "\\u003c"),
-      }}
-    />
-  );
 }
 
 export function generateStaticParams() {
@@ -125,6 +100,13 @@ export default async function NewsPostPage(props: PageProps<"/blog/[slug]">) {
 
   // Prefer stories from the same section, then fill with the latest.
   const others = getAllNews().filter((p) => p.slug !== post.slug);
+  const section = getSection(post.category.toLowerCase());
+  const guides = isAlvasTopic(post)
+    ? alvasGuides
+        .filter((slug) => slug !== post.slug)
+        .map(getNewsBySlug)
+        .filter((p) => p !== undefined)
+    : [];
   const more = [
     ...others.filter((p) => p.category === post.category),
     ...others.filter((p) => p.category !== post.category),
@@ -133,6 +115,15 @@ export default async function NewsPostPage(props: PageProps<"/blog/[slug]">) {
   return (
     <main className="w-full">
       <JsonLd data={articleJsonLd(post)} />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          ...(section
+            ? [{ name: section.name, path: `/category/${section.slug}` }]
+            : [{ name: "News", path: "/blog" }]),
+          { name: post.title, path: `/blog/${post.slug}` },
+        ])}
+      />
       {post.faqs && <JsonLd data={faqJsonLd(post.faqs)} />}
       <Container className="pb-16 pt-32 sm:pt-36">
         <Link
@@ -147,7 +138,9 @@ export default async function NewsPostPage(props: PageProps<"/blog/[slug]">) {
           <h1 className="mt-5 font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
             {post.title}
           </h1>
-          <p className="mt-5 text-xl leading-8 text-muted">{post.summary}</p>
+          <p data-speakable className="mt-5 text-xl leading-8 text-muted">
+            {post.summary}
+          </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-x-3 gap-y-1 border-y border-line py-4">
             <span className="font-medium text-foreground">{post.author}</span>
@@ -159,6 +152,7 @@ export default async function NewsPostPage(props: PageProps<"/blog/[slug]">) {
 
           {post.facts && (
             <aside
+              data-speakable
               aria-label="Key facts"
               className="mt-10 rounded-2xl border border-line bg-surface p-6"
             >
@@ -179,10 +173,42 @@ export default async function NewsPostPage(props: PageProps<"/blog/[slug]">) {
           )}
 
           <div className="mt-10 space-y-6 text-lg leading-8 text-foreground/90 sm:text-xl sm:leading-9">
-            {post.body.split(/\n\s*\n/).map((paragraph, i) => (
-              <p key={i}>{paragraph}</p>
-            ))}
+            {post.body.split(/\n\s*\n/).map((paragraph, i) =>
+              paragraph.startsWith("## ") ? (
+                <h2
+                  key={i}
+                  className="pt-4 font-display text-2xl font-semibold text-foreground sm:text-3xl"
+                >
+                  {paragraph.slice(3)}
+                </h2>
+              ) : (
+                <p key={i}>{paragraph}</p>
+              ),
+            )}
           </div>
+
+          {guides.length > 0 && (
+            <nav aria-labelledby="guides" className="mt-14">
+              <h2
+                id="guides"
+                className="text-xs font-semibold uppercase tracking-[0.18em] text-foreground"
+              >
+                Related guides
+              </h2>
+              <ul className="mt-4 space-y-2">
+                {guides.map((guide) => (
+                  <li key={guide.slug}>
+                    <Link
+                      href={`/blog/${guide.slug}`}
+                      className="text-lg font-medium text-accent underline-offset-4 hover:text-accent-strong hover:underline"
+                    >
+                      {guide.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          )}
 
           {post.faqs && (
             <section aria-labelledby="faq" className="mt-14">

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import CardCarousel from "@/components/CardCarousel";
 import Container from "@/components/Container";
@@ -7,6 +8,10 @@ import SectionHeading from "@/components/SectionHeading";
 import hero from "@/herosection1.jpg";
 import { gallery } from "@/lib/gallery";
 import { getAllNews, getNewsByCategory, sections } from "@/lib/news";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 export default function Home() {
   const latest = getAllNews().slice(0, 9);

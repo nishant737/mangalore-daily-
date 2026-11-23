@@ -80,6 +80,7 @@ export default function SiteFooter() {
               { href: "/", label: "Home" },
               { href: "/blog", label: "Latest news" },
               { href: "/gallery", label: "Gallery" },
+              { href: "/about", label: "About us" },
             ]}
           />
         </div>

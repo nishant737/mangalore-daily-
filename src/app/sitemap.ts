@@ -25,8 +25,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${siteUrl}/blog/${post.slug}`,
       lastModified: post.updated ?? post.date,
       changeFrequency: "monthly" as const,
-      priority: post.slug.startsWith("alvas-") ? 0.8 : 0.6,
+      priority: /^(alvas-|best-schools-)/.test(post.slug) ? 0.8 : 0.6,
     })),
     { url: `${siteUrl}/gallery`, changeFrequency: "monthly", priority: 0.4 },
+    { url: `${siteUrl}/about`, changeFrequency: "yearly", priority: 0.3 },
   ];
 }

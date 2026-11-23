@@ -5,6 +5,7 @@ import Link from "next/link";
 import { gutter } from "@/components/Container";
 import MenuButton from "@/components/MenuButton";
 import SiteFooter from "@/components/SiteFooter";
+import { JsonLd, siteJsonLd } from "@/lib/seo";
 import { siteUrl } from "@/lib/site";
 import logo from "@/logo-dark.png";
 import "./globals.css";
@@ -32,20 +33,32 @@ export const metadata: Metadata = {
   },
   description:
     "Daily news, exam results, sports and culture from Mangalore, Udupi and Dakshina Kannada. Local news. Real stories.",
+  applicationName: "Mangalore Daily",
   openGraph: {
     siteName: "Mangalore Daily",
     type: "website",
     locale: "en_IN",
+  },
+  twitter: { card: "summary_large_image" },
+  alternates: {
+    types: { "application/rss+xml": "/feed.xml" },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    // Let Google show full snippets and large image previews.
+    googleBot: { "max-snippet": -1, "max-image-preview": "large" },
   },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
-      lang="en"
+      lang="en-IN"
       className={`${geistSans.variable} ${geistMono.variable} ${sourceSerif.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
+        <JsonLd data={siteJsonLd} />
         <header className="absolute inset-x-0 top-0 z-10">
           <div
             className={`flex w-full items-center justify-between py-4 ${gutter}`}

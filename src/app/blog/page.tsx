@@ -5,6 +5,7 @@ import PostCard from "@/components/PostCard";
 import { getAllNews } from "@/lib/news";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/blog" },
   title: "Latest News",
   description:
     "The latest news, events and updates from Mangalore and Dakshina Kannada.",
